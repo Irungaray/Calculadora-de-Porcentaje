@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+.calculo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input, h3 {
+    padding: 10px;
+}
