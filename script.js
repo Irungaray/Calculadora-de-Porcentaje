@@ -4,21 +4,18 @@ window.onload=function(){
     var resultado = document.getElementById('resultado')
     var form = document.getElementById('calcularCalculo')
 
-    function Porcentaje (tanto, de) {
-       console.log(tanto / 100 * de)
-    }
-
-    form.addEventListener('submit', function() {
-        if (!tanto.value || de.value) {
+    form.addEventListener('submit', function(event) {
+        if (!tanto.value || !de.value) {
             alert('No seas pelotudo y pone números en los inputs')
         } else {
-        var x = tanto.value
-        var y = de.value
+        var x = parseFloat(tanto.value)
+        var y = parseFloat(de.value)
 
-        x = x.toString()
-        y = y.toString()
+        var porcentajeFinal = x * y / 100
+
+        resultado.innerText = ("El " + x + "% de " + y + " es: " + porcentajeFinal + "%")
         }
 
-        console.log(x / 100 * y)
+        event.preventDefault()
     })
 }
