@@ -1,12 +1,16 @@
 body {
     font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.82);
     text-align: center;
+    background-image: url('./images/background.png')
 }
 
 .calculo {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 input, h3 {

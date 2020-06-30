@@ -1,4 +1,3 @@
-window.onload=function(){
     var tanto = document.getElementById('tanto')
     var de = document.getElementById('de')
     var resultado = document.getElementById('resultado')
@@ -18,4 +17,3 @@ window.onload=function(){
 
         event.preventDefault()
     })
-}
